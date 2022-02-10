@@ -1,0 +1,703 @@
+@import "_var"
+@media screen and (min-width: 800px)
+	header .gnb > li
+		&:hover
+			border-bottom: 1px solid $mainColor
+			//h2 a
+				// color: #008efc
+				// text-decoration: underline
+			&.gugak_archive a
+				color: transparent
+				text-decoration: none
+				opacity: 0.8
+		> ul li:hover a
+			font-weight: 500
+			color: #000000
+	.main1_cont1 > div > div h4:hover a
+		text-decoration: underline
+		span
+			background: url(#{$assetPath}/icon_go_01_hover.png) no-repeat
+			background-size: contain
+	.main1_cont2
+		.list ul li:hover
+			@for $i from 1 to 5
+				&:nth-of-type(#{$i})
+					background: rgba(34, 34, 34, 0.9) url(#{$assetPath}/icon_menu_0#{$i}.png) no-repeat 72% 84%
+		.search_wrap
+			.search_btn > a:hover
+				background: #222 url(#{$assetPath}/icon_detail.png) no-repeat 50% 16px
+
+			.hash li:hover a
+				color: #fff
+	nav
+		ul li:hover
+			background: #444
+			a h2
+				color: #fff
+			@for $i from 1 to 5
+				&:nth-of-type(#{$i}) span
+					background: url(#{$assetPath}/icon_side_0#{$i}_hover.png) no-repeat 50%
+					background-size: contain
+		&.go_top .top_btn:hover
+			opacity: 0.8
+		div > a:hover
+			text-decoration: underline
+	.main_title2:hover a span
+		background: url(#{$assetPath}/btn_more_hover.png) no-repeat
+		background-size: contain
+	.section1_cont
+		.cont_left .section1_video
+			.thumbnail:hover > div a::before
+				opacity: 1
+			.video_list li:hover a
+				.text
+					background: rgba(0,0,0,0.8)
+					top: 0
+		.cont_right .mySwiper .swiper-wrapper .swiper-slide:hover
+			.img
+				border: 2px solid #222
+	.section2_cont .img_wrap a:hover
+		.img_bg_white
+			border: 2px solid #222
+	.section3_cont .img_list li:hover
+		p
+			a
+				text-decoration: underline
+				span
+					background: url(#{$assetPath}/icon_go_02_hover.png) no-repeat
+					background-size: contain
+	footer .ft_top
+		.ul_ft li:hover a,
+		.slide_ft .cont ul li:hover a
+			color: #fff
+
+@media screen and (max-width: 1800px)
+	header .gnb > li
+		padding: 0 3.625rem
+		margin: 0
+		> ul li a
+			padding: 5px 0
+	.main1_cont2
+		margin-right: 40px
+
+	/* 서브 */
+	.sub_dictionary
+		margin-left: 4rem
+		.sub_container
+			&.on
+				width: 95%
+		.sub_nav
+			.sub_nav_cont > ul > li > ul li > a
+				height: 9rem
+
+@media screen and (max-width: 1600px)
+	body,
+	html
+		font-size: 90%
+	nav.ft_on
+		top: -8.5rem
+	.main1_cont1
+		max-width: 380px
+	.main1_cont2
+		padding-left: 1rem
+	.sub_dictionary .sub_nav
+		width: 485px
+		padding: 0 2.5rem
+		&.close
+			right: -485px
+@media screen and (max-width: 1400px)
+	header .gnb > li .img
+		width: 14.75rem
+		> a
+			background-size: contain
+	nav.ft_on
+		top: -8rem
+	.section
+		padding-left: 1rem
+		padding-right: 1rem
+	#section0
+		padding-right: 0
+	.main1_cont1
+		right: 8rem
+	.main1_cont2
+		margin-right: 0
+	footer
+		padding-left: 1rem
+		padding-right: 1rem
+	/* 서브 */
+	.sub_dictionary
+		margin-left: 2rem
+	.sub_dictionary .sub_nav
+		width: 450px
+		padding: 0 2rem
+		&.close
+			right: -450px
+
+@media screen and (max-width: 1200px)
+	header
+		padding: 0 2rem
+		.gnb > li
+			padding: 0 2rem
+	.main_title h3
+		font-size: 4rem
+	.section2_cont .img_wrap *
+		width: 76%
+	.section3_cont .img_list li .img
+		width: 32rem
+	footer .ft_top .ul_ft li
+		margin-right: 1.5rem
+
+	/* 서브 */
+	.sub_dictionary
+		margin-left: 0
+		.sub_container
+			width: 100%
+			padding-left: 40px
+			padding-right: 40px
+			margin: 0 auto
+			float: none
+			padding-bottom: 4rem
+		.sub_nav
+			position: relative
+			float: none
+			width: 100%
+			padding: 4rem 40px 6rem 40px
+			.sub_nav_cont > ul > li
+				&:first-child
+					margin-top: 0
+				> ul li > a
+					height: 20rem
+
+@media screen and (max-width: 1024px)
+	html,
+	body
+		font-size: 80%
+	.fp-section, .fp-tableCell,
+	.section
+		height: auto !important
+		padding-top: 0
+	body.on
+		overflow: hidden !important
+	header
+		height: 70px
+		position: relative
+		.gnb
+			+positionAt(absolute, $top: 70px, $left: 0)
+			width: 100%
+			height: calc(100vh - 70px)
+			background: #fff
+			display: flex
+			flex-direction: column
+			display: none
+			padding-top: 104px
+			align-items: flex-start
+			padding-left: 30px
+			padding-right: 30px
+			margin-left: 0
+			> li
+				display: block
+				padding: 0
+				width: 100%
+				> ul
+					position: static
+					display: none
+					padding-top: 0
+					height: auto
+					border-bottom: 1px solid #eee
+					padding: 8px 0 16px 0
+					li
+						text-align: left
+						a
+							font-size: 16px
+							color: #666
+							padding: 8px 0
+							display: block
+				&.gugak_archive h2
+					background: transparent
+					> a
+						background-size: 88px
+				&.gugak_go
+					display: block
+					text-align: left
+					margin-top: 14px
+					h2
+						background: transparent
+						border-bottom: none
+						a
+							font-size: 16px
+							font-weight: 500
+							color: #666
+							padding-left: 36px
+							background: url(#{$assetPath}/logo_nat.png) no-repeat 0 50%
+							background-size: 32px
+							span
+								display: inline-block
+								width: 16px
+								height: 16px
+								background: url(#{$assetPath}/icon_go_03.png) no-repeat
+								background-size: contain
+								vertical-align: -1px
+				> h2
+					background: url(#{$assetPath}/icon_depth_open.png) no-repeat 100% 50%
+					border-bottom: 1px solid #eee
+					a
+						font-size: 18px
+						padding: 20px 0
+						display: block
+						font-weight: 500
+					&.active
+						background: url(#{$assetPath}/icon_depth_close.png) no-repeat 100% 50%
+						a
+							color: #008efc
+
+		button
+			display: none
+		.gnb_menu
+			display: block
+			width: 26px
+			height: 20px
+			background: url(#{$assetPath}/menu.png) no-repeat
+			background-size: contain
+		.gugak_go
+			display: block
+		&.on
+			.gnb_menu
+				background: url(#{$assetPath}/mobile_open_button.png) no-repeat 50%
+				background-size: contain
+			.gnb
+				display: flex
+	nav
+		width: 100%
+		background: #dddddd
+		height: auto
+		display: none
+		padding-bottom: 0
+		top: 70px
+		z-index: 9
+		border-top: 1px solid #ccc
+		position: relative
+		top: 0
+		&.on
+			display: block
+		> div
+			display: none
+		> ul
+			display: flex
+			li
+				width: 25%
+				border-right: 1px solid #ccc
+				height: 93px
+				@for $i from 1 to 5
+					&:nth-of-type(#{$i}) span
+						background: url(#{$assetPath}/micon_side_0#{$i}.png) no-repeat 50%
+				&:last-child
+					border-right: none
+				a
+					flex-direction: column
+					h2
+						font-size: 12px
+						font-weight: 500
+						color: #666
+	#section0
+		padding-left: 20px
+	.section
+		background-position-y: 0
+		padding: 5rem 20px 6rem 20px
+	.scrolling
+		display: none
+	.main_title h3
+		font-size: 3rem
+		margin-bottom: 0
+	.main_title2 a
+		font-size: 2.5rem
+	.main1_cont1
+		max-width: 326px
+		position: relative
+		left: 1rem
+		right: auto
+	.main1_cont2
+		.search_wrap
+			width: 56.18%
+			.search_btn > a
+				background-size: 25px !important
+		.list
+			width: 43.81%
+			ul li
+				background-size: 46px !important
+	.section2_cont .text
+		top: 0
+	.circle_text
+		padding-top: 5rem
+	#section3
+		padding-bottom: 25rem
+	.section3_cont .img_list li
+		.img
+			height: 18rem
+			width: 29rem
+		&:nth-child(2) .img
+			width: 23.875rem
+			height: 14.5rem
+	footer
+		.ft_top
+			display: block
+			> div
+				margin-bottom: 1rem
+				+flex_type($justify: center, $align: center)
+		.m_top_btn
+			display: block
+			background: url(#{$assetPath}/mbtn_top.png) no-repeat
+			width: 40px
+			height: 40px
+			background-size: contain
+			+positionAt(absolute, $top: -60px, $right: 20px)
+			text-indent: -9999px
+	#footer
+		padding-top: 3rem
+		padding-bottom: 4rem
+
+	/* 서브 */
+
+@media screen and (max-width: 800px)
+	#section0
+		padding-left: 0
+		padding-bottom: 0
+	.main_title
+		padding-left: 20px
+		h3
+			font-weight: 700
+			margin-bottom: 12px
+	.main1_cont2
+		padding-left: 0
+		display: flex
+		flex-direction: column-reverse
+		.list
+			width: 100%
+			float: none
+		.search_wrap
+			width: 100%
+			float: none
+	#section1,
+	#section3
+		background-image: none !important
+		.section1_cont
+			.cont_left
+				width: 80%
+				margin: 0 auto
+				float: none
+				.section1_video
+					.thumbnail
+						p a
+							color: #444
+						> div a
+							.img
+								background-position: 50% !important
+							button
+								width: 48px
+								height: 48px
+					.video_list li
+						height: 10rem
+						a .img
+							background-size: cover !important
+			.cont_right
+				width: 80%
+				margin: 0 auto
+				float: none
+				margin-top: 5rem
+				.main_title2
+					width: 100%
+				.mySwiper
+					.swiper-wrapper
+						width: 90%
+						padding-left: 3.5rem
+					.swiper-button-prev
+						background: url(#{$assetPath}/m_pre.png) no-repeat
+					.swiper-button-next
+						background: url(#{$assetPath}/m_next.png) no-repeat
+		.main_title2 a
+			color: #000
+	.section2_cont
+		flex-direction: column-reverse
+		.img_wrap
+			width: 100%
+			position: relative
+			z-index : 2
+		.text
+			top: 5rem
+			margin-left: 50%
+			z-index: 1
+	.circle_text
+		width: 44%
+	#section3
+		padding-bottom: 6rem
+	.section3_cont
+		.circle_text
+			height: auto
+			padding-top: 0
+			p
+				display: none
+		.img_list
+			li
+				position: static
+				text-align: center
+				margin: 0 auto
+				margin-bottom: 24px
+				width: 67%
+				&:last-child
+					margin-bottom: 0
+				p a
+					color: #444
+					span
+						background: url(#{$assetPath}/icon_go_02_b.png) no-repeat
+						background-size: contain
+						vertical-align: -4px
+				&:nth-child(3)
+					transform: translateX(0%)
+				.img
+					width: 100% !important
+					height: 19rem !important
+					display: inline-block
+	/*서브*/
+	.sub_dictionary
+		.sub_container
+			padding-left: 20px
+			padding-right: 20px
+		.sub_nav
+			padding-left: 20px
+			padding-right: 20px
+			.sub_nav_cont > ul > li > ul li > a
+				height: 13rem
+	.dictionary_title h3
+		font-size: 2.3rem
+	.dictionary_cont
+		> ul > li > div .img_cont
+			display: block
+			.img
+				width: 100%
+			.text
+				width: 100%
+				padding: 20px
+				table tr th
+					background: url(../images/table_icon.png) no-repeat 0 14px
+		.copyright > div .text
+			margin-left: 1rem
+@media screen and (max-width: 640px)
+	#section0
+		background-position-x: 55%
+	.main_title p
+		width: 70%
+		word-break: keep-all
+		line-height: 1.67
+		font-size: 12px
+	.main1_cont1
+		left: 0
+		padding-left: 4rem
+		> div
+			> div
+				padding-left: 220px
+				top: -9px
+				p
+					width: 100%
+					br
+						display: none
+			> span
+				width: 124px
+				height: 124px
+				&:before
+					top: 2px
+	.main1_cont2
+		.list
+			height: 8rem
+		.search_wrap
+			.search_btn
+				padding-left: 20px
+				padding-right: 20px
+				height: 64px
+				.search
+					width: 75%
+					input
+						padding: 0
+					button
+						background-size: 58% !important
+						background-position: 7px 50%
+				> a
+					width: 20%
+					padding-top: 12%
+					background-position-y: 6px
+					background-size: 32px !important
+			.hash
+				padding-left: 20px
+				margin-top: 1rem
+				padding-right: 20px
+				li
+					padding: 3px 1rem 3px 0
+	#section1
+		.section1_cont
+			.cont_left
+				width: 100%
+				.section1_video
+					.thumbnail
+						> div
+							height: 15rem
+						p a
+							font-size: 14px
+							line-height: 1.57
+					.video_list li
+						height: 87px
+						a .text
+							padding: 8px
+							top: 0
+							background: rgba(0,0,0,0.6)
+							p
+								font-size: 12px
+								font-weight: 300
+			.cont_right
+				width: 100%
+				.mySwiper
+					.swiper-button-next,
+					.swiper-button-prev
+						top: 60%
+					.swiper-wrapper
+						padding-left: 28px
+						.swiper-slide
+							.img
+								width: 234px
+								height: 234px
+							.text
+								width: 250px
+								height: 250px
+								padding-top: 190px
+								margin-left: 20px
+								p
+									+textVertical(2)
+	#section2
+		background-position-x: 15%
+	.section2_cont
+		.text
+			margin-left: 29%
+			top: 0
+			p
+				line-height: 2
+				font-size: 12px
+				span
+					font-size: 16px
+		.img_wrap
+			margin-top: -3rem
+			height: 246px
+			*
+				width: 291px
+				height: 291px
+			.img_bg_white
+				top: 38px
+				left: 44px
+			.d3_img
+				left: 22px
+				top: 52px
+				height: 176px
+	.section3_cont
+		.circle_text
+			padding-left: 0
+		.img_list li
+			width: 100%
+			.img
+				width: 100% !important
+				height: 202px !important
+			p a
+				font-size: 16px
+	.main_title
+		padding-left: 20px
+	.main_title2 a
+		font-size: 28px
+		span
+			width: 32px
+			height: 32px
+	.section,
+	#section3
+		padding: 40px 20px 80px
+	.circle_text
+		width: 234px
+		height: 234px
+	#footer
+		padding-top: 20px
+		padding-bottom: 20px
+		.ft_top
+			margin-bottom: 20px
+			.ft_logo
+				height: 40px
+				margin-right: 0
+				margin: 0 auto
+			> div
+				display: block
+				&.second
+					display: flex
+					flex-direction: column-reverse
+					margin-top: 20px
+			ul
+				text-align: center
+				margin-top: 20px
+				li a
+					font-size: 14px
+			.search_ft
+				width: 100%
+				margin-left: 10px
+				margin-right: 10px
+				margin-top: 20px
+				height: 44px
+				font-size: 14px
+			.slide_ft
+				width: 100%
+				margin-left: 10px
+				margin-right: 10px
+				.title
+					height: 44px
+					a
+						font-size: 14px
+				.cont
+					bottom: 44px
+					ul
+						text-align: left
+		.ft_info ul li
+			font-size: 12px
+			padding: 0 4px
+			line-height: 2
+
+	/* 서브 */
+	.sub_dictionary
+		.sub_nav .sub_nav_cont > ul > li
+			.sub_nav_title
+				h4
+					font-size: 18px
+				a
+					width: 16px
+					height: 16px
+			> ul li
+				background-size: 11px
+				> a
+					height: 8rem
+	.dictionary_title h3
+		font-size: 28px
+		span
+			font-size: 20px
+	.dictionary_cont
+		> ul > li
+			margin-top: 30px
+			h4
+				margin-bottom: 8px
+				font-size: 18px
+				background-size: 14px
+				padding-left: 20px
+			> div
+				padding-left: 10px
+		.copyright
+			> div
+				display: block
+				.text
+					margin-left: 0
+					margin-top: 10px
+				.img
+					width: 60%
+	.dot li
+		padding-left: 8px
+		&::before
+			width: 3px
+			height: 3px
+			top: 9px
