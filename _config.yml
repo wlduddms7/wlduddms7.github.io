@@ -1,0 +1,8 @@
+locale                   : "en-US"
+title                    : "jye site"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "jye"
+description              : "An amazing website."
+url                      : "https://wlduddms7.github.io/"
+baseurl                  : # the subpath of your site, e.g. "/blog"
