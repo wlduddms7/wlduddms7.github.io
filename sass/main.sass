@@ -1,3 +1,290 @@
 @import "_var"
-.sub
-	display: block
+.section > div
+    padding: 2rem
+.main
+    > div
+        +flex_type($justify: space-between)
+        flex-direction: column
+        position: relative
+        h1,
+        h2
+            text-align: left
+            +font_Hahmlet_600
+            font-size: 11rem
+            span
+                +font_Hahmlet_800
+                vertical-align: 0
+                font-size: 11rem
+        h2
+            text-align: right
+        > div
+            +positionAt(absolute, $bottom: 2rem, $left: 2rem)
+            width: 20%
+            ul
+                li
+                    display: inline-block
+                    +font_Hahmlet_600
+                    font-size: 2rem
+                    margin-right: 1rem
+                    line-height: 1.3
+h3
+    text-align: center
+    font-size: 4rem
+    margin-bottom: 5rem
+    +font_Hahmlet_600
+    span
+        font-size: 4rem
+        +font_Hahmlet_800
+        vertical-align: 0
+        font-weight: 700
+.about
+    > h3
+    > div
+        > div
+            +flex_type($justify: space-between, $align: center)
+            width: 65%
+            margin: 0 auto
+            .img_wrap
+                width: 38%
+                transform: rotate(-5deg)
+                position: relative
+                > span
+                    +positionAt(absolute, $bottom: -1rem, $right: -1rem)
+                    width: 100%
+                    height: 100%
+                    z-index: -1
+                    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+                    transform: rotate(5deg)
+            figure
+                overflow: hidden
+                padding: 4rem 2rem 6rem 2rem
+                position: relative
+                z-index: 2
+                background: #fff
+                box-shadow: 0 0 10px rgba(0,0,0,0.2)
+                img
+                    max-width: 100%
+                figcaption
+                    font-size: 1.3rem
+                    font-family: 'UhBeeSe_hyun'
+                    margin-top: 2rem
+                    text-align: right
+            > div
+                width: 53%
+                *
+                    +font_Hahmlet_600
+                    font-size: 1.5rem
+                > ul
+                    position: relative
+                    &:before
+                        +before($widthB: 1px, $heightB: 89%, $topB: 23px, $leftB: calc(20% - 1px), $bgB : #d3d3d3)
+                    > li
+                        line-height: 1
+                        padding: 0.5rem 0 
+                        padding-left: 1rem
+                        margin-bottom: 1rem
+                        display: flex
+                        > span
+                            margin-bottom: 0.6rem
+                            display: block
+                            font-size: 1.7rem
+                            +font_Hahmlet_800
+                            width: 20%
+                            position: relative
+                            line-height: 1
+                            text-align: right
+                            padding-right: 2rem
+                            &:before
+                                +before($widthB: 6px, $heightB: 6px, $topB: 14px,  $bgB : #ababab)
+                                border-radius: 50%
+                                right: 10px
+                        div
+                            width: 80%
+                            > p
+                                padding: 0.5rem 0
+                                span
+                                    vertical-align: 0
+                                    font-size: 1.3rem
+                                    display: inline-block
+                                    color: #303030
+                            .career
+                                li
+                                    line-height: 1.5
+                                    span
+                                        display: inline-block
+                                    p
+                                        display: inline-block
+                        p
+                            display: block
+                            font-size: 1.7rem
+                .skill
+                    li
+                        display: inline-block
+                        margin-right: 1rem
+                        position: relative
+                        padding-left: 3rem
+                        margin-bottom: 1rem
+                        &:before
+                            +before($widthB: 3rem, $heightB:  100%, $topB: 50%, $leftB: 0)
+                            transform: translateY(-50%) 
+                        @for $i from 1 to 8
+                            &:nth-of-type(#{$i}):before
+                                background: url(#{$assetPath}/skill_0#{$i}.png) no-repeat 50%
+                                background-size: contain
+.protfolio
+    &.protfolio_last
+        > div
+            display: block
+            width: 100%
+            margin: 0 auto
+            > .more
+                text-align: right
+                +positionAt(absolute, $bottom: 6rem, $right: 9rem)
+                padding-right: 3rem
+                a
+                    font-size: 2rem
+                    font-weight: 700
+                span
+                    display: inline-block
+                    background: url(#{$assetPath}/cursor.png) no-repeat
+                    background-size: contain
+                    +positionAt(absolute, $bottom: rem(-20), $right: 18px)
+                    transform: rotate(-45deg)
+                    width: 50px
+                    height: 50px
+                    +hideFont
+        .last
+            +flex_type($justify: space-between, $align: center)
+            flex-direction: row-reverse
+            width: 85%
+            margin: 0 auto
+            height: 100%
+        .protfolio_intro .pc
+            height: 39rem
+    &.protfolio_odd
+        > div
+            flex-direction: row
+        .protfolio_intro 
+            .pc
+                margin: 0 auto
+                margin-right: 0
+                border-radius: 150px 0 150px 0
+            .mobile
+                right: auto
+                left: 0
+    > div
+        +flex_type($justify: space-between, $align: center)
+        flex-direction: row-reverse
+        width: 85%
+        margin: 0 auto
+    .pf_title
+        width: 45%
+        &.pf_title2
+            > span
+                background-color: #e2485e
+            h3
+                background: -webkit-linear-gradient(-45deg, #3372b7 48%, #e2485e 53%)
+                background: linear-gradient(-45deg, #3372b7, #e2485e)
+                background-clip: border-box
+                background-clip: text
+                color: transparent
+                -webkit-background-clip: text
+        &.pf_title3
+            > span
+                background-color: #4e5cbc
+            h3
+                color: #4e5cbc
+        &.pf_title4
+            > span
+                background-color: #f195aa
+            h3
+                color: #f195aa
+        &.pf_title5
+            > span
+                background-color: #18aee4
+            h3
+                color: #18aee4
+        *
+            +font_Hahmlet_600
+        > span
+            width: 90px
+            height: 30px
+            background: linear-gradient(135deg, #fff 32%, transparent 32%) -15px 0, linear-gradient(225deg, #fff 32%, transparent 32%) -15px 0, linear-gradient(315deg, #fff 32%, transparent 32%), linear-gradient(45deg, #fff 32%, transparent 32%)
+            background-size: 30px 30px
+            z-index: 1
+            background-color: #fbcd37
+            background-repeat: repeat
+            display: inline-block
+        h3
+            color: #fbcd37
+            text-align: left
+            margin-bottom: 2rem
+            text-transform: uppercase
+            +font_Hahmlet_800
+        > p
+            font-size: rem(40)
+            font-weight: 700
+        > div
+            margin: 3rem 0
+            p
+                font-size: 2rem
+                line-height: 1.3
+    .protfolio_intro
+        width: 50%
+        +flex_type($justify: space-between, $align: flex-end)
+        position: relative
+        .pc
+            width: 80%
+            height: rem(800)
+            overflow: hidden
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+            border-radius: 0 150px 0 150px
+            a
+                display: block
+                width: 100%
+                height: 100%
+            img
+                max-width: 100%
+        .mobile
+            width: 35%
+            height: 34rem
+            overflow: hidden
+            +positionAt(absolute,  $right: 1rem, $bottom: 0rem)
+            &:before
+                +before($widthB: 100%, $heightB: 100%, $topB: 0, $leftB: 0, $bgB : url(#{$assetPath}/mobile_bg.png) no-repeat)
+                background-size: contain
+                z-index: 2
+            > div
+                position: absolute
+                z-index: 0
+                width: 88%
+                left: 16px
+                top: 16px
+                height: 32.0625rem
+                overflow: hidden
+            img
+                max-width: 100%
+.top_btn
+    opacity: 0
+    position: fixed
+    width: auto
+    height: auto
+    right: 3rem
+    bottom: 1rem
+    background: url(#{$assetPath}/top.png) no-repeat 50% 0 
+    border: none
+    +NanumSquare
+    font-weight: 700
+    font-size: 1.5rem
+    background-size: 15px
+    padding-top: 1rem
+    z-index: -1
+    transition: .5s
+    cursor: pointer
+    &.go_top
+        opacity: 1
+        bottom: 2rem
+        z-index: 9
+    &.ft_on
+        bottom: 5rem
+    

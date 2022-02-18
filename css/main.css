@@ -1,0 +1,530 @@
+.section > div {
+  padding: 2rem;
+}
+
+.main > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main > div h1,
+.main > div h2 {
+  text-align: left;
+  font-family: 'Hahmlet-SemiBold';
+  font-size: 11rem;
+}
+
+.main > div h1 span,
+.main > div h2 span {
+  font-family: 'Hahmlet-ExtraBold';
+  vertical-align: 0;
+  font-size: 11rem;
+}
+
+.main > div h2 {
+  text-align: right;
+}
+
+.main > div > div {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  width: 20%;
+}
+
+.main > div > div ul li {
+  display: inline-block;
+  font-family: 'Hahmlet-SemiBold';
+  font-size: 2rem;
+  margin-right: 1rem;
+  line-height: 1.3;
+}
+
+h3 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  font-family: 'Hahmlet-SemiBold';
+}
+
+h3 span {
+  font-size: 4rem;
+  font-family: 'Hahmlet-ExtraBold';
+  vertical-align: 0;
+  font-weight: 700;
+}
+
+.about > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about > div > div .img_wrap {
+  width: 38%;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  position: relative;
+}
+
+.about > div > div .img_wrap > span {
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.about > div > div figure {
+  overflow: hidden;
+  padding: 4rem 2rem 6rem 2rem;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about > div > div figure img {
+  max-width: 100%;
+}
+
+.about > div > div figure figcaption {
+  font-size: 1.3rem;
+  font-family: 'UhBeeSe_hyun';
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.about > div > div > div {
+  width: 53%;
+}
+
+.about > div > div > div * {
+  font-family: 'Hahmlet-SemiBold';
+  font-size: 1.5rem;
+}
+
+.about > div > div > div > ul {
+  position: relative;
+}
+
+.about > div > div > div > ul:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 89%;
+  top: 23px;
+  left: calc(20% - 1px);
+  background: #d3d3d3;
+}
+
+.about > div > div > div > ul > li {
+  line-height: 1;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about > div > div > div > ul > li > span {
+  margin-bottom: 0.6rem;
+  display: block;
+  font-size: 1.7rem;
+  font-family: 'Hahmlet-ExtraBold';
+  width: 20%;
+  position: relative;
+  line-height: 1;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.about > div > div > div > ul > li > span:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 14px;
+  background: #ababab;
+  border-radius: 50%;
+  right: 10px;
+}
+
+.about > div > div > div > ul > li div {
+  width: 80%;
+}
+
+.about > div > div > div > ul > li div > p {
+  padding: 0.5rem 0;
+}
+
+.about > div > div > div > ul > li div > p span {
+  vertical-align: 0;
+  font-size: 1.3rem;
+  display: inline-block;
+  color: #303030;
+}
+
+.about > div > div > div > ul > li div .career li {
+  line-height: 1.5;
+}
+
+.about > div > div > div > ul > li div .career li span {
+  display: inline-block;
+}
+
+.about > div > div > div > ul > li div .career li p {
+  display: inline-block;
+}
+
+.about > div > div > div > ul > li p {
+  display: block;
+  font-size: 1.7rem;
+}
+
+.about > div > div > div .skill li {
+  display: inline-block;
+  margin-right: 1rem;
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about > div > div > div .skill li:before {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.about > div > div > div .skill li:nth-of-type(1):before {
+  background: url(../images/skill_01.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.about > div > div > div .skill li:nth-of-type(2):before {
+  background: url(../images/skill_02.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.about > div > div > div .skill li:nth-of-type(3):before {
+  background: url(../images/skill_03.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.about > div > div > div .skill li:nth-of-type(4):before {
+  background: url(../images/skill_04.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.about > div > div > div .skill li:nth-of-type(5):before {
+  background: url(../images/skill_05.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.about > div > div > div .skill li:nth-of-type(6):before {
+  background: url(../images/skill_06.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.about > div > div > div .skill li:nth-of-type(7):before {
+  background: url(../images/skill_07.png) no-repeat 50%;
+  background-size: contain;
+}
+
+.protfolio.protfolio_last > div {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.protfolio.protfolio_last > div > .more {
+  text-align: right;
+  position: absolute;
+  right: 9rem;
+  bottom: 6rem;
+  padding-right: 3rem;
+}
+
+.protfolio.protfolio_last > div > .more a {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.protfolio.protfolio_last > div > .more span {
+  display: inline-block;
+  background: url(../images/cursor.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 18px;
+  bottom: -1.25rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 50px;
+  height: 50px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.protfolio.protfolio_last .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.protfolio.protfolio_last .protfolio_intro .pc {
+  height: 39rem;
+}
+
+.protfolio.protfolio_odd > div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.protfolio.protfolio_odd .protfolio_intro .pc {
+  margin: 0 auto;
+  margin-right: 0;
+  border-radius: 150px 0 150px 0;
+}
+
+.protfolio.protfolio_odd .protfolio_intro .mobile {
+  right: auto;
+  left: 0;
+}
+
+.protfolio > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.protfolio .pf_title {
+  width: 45%;
+}
+
+.protfolio .pf_title.pf_title2 > span {
+  background-color: #e2485e;
+}
+
+.protfolio .pf_title.pf_title2 h3 {
+  background: linear-gradient(-45deg, #3372b7, #e2485e);
+  background-clip: border-box;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.protfolio .pf_title.pf_title3 > span {
+  background-color: #4e5cbc;
+}
+
+.protfolio .pf_title.pf_title3 h3 {
+  color: #4e5cbc;
+}
+
+.protfolio .pf_title.pf_title4 > span {
+  background-color: #f195aa;
+}
+
+.protfolio .pf_title.pf_title4 h3 {
+  color: #f195aa;
+}
+
+.protfolio .pf_title.pf_title5 > span {
+  background-color: #18aee4;
+}
+
+.protfolio .pf_title.pf_title5 h3 {
+  color: #18aee4;
+}
+
+.protfolio .pf_title * {
+  font-family: 'Hahmlet-SemiBold';
+}
+
+.protfolio .pf_title > span {
+  width: 90px;
+  height: 30px;
+  background: linear-gradient(135deg, #fff 32%, transparent 32%) -15px 0, linear-gradient(225deg, #fff 32%, transparent 32%) -15px 0, linear-gradient(315deg, #fff 32%, transparent 32%), linear-gradient(45deg, #fff 32%, transparent 32%);
+  background-size: 30px 30px;
+  z-index: 1;
+  background-color: #fbcd37;
+  background-repeat: repeat;
+  display: inline-block;
+}
+
+.protfolio .pf_title h3 {
+  color: #fbcd37;
+  text-align: left;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: 'Hahmlet-ExtraBold';
+}
+
+.protfolio .pf_title > p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.protfolio .pf_title > div {
+  margin: 3rem 0;
+}
+
+.protfolio .pf_title > div p {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.protfolio .protfolio_intro {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.protfolio .protfolio_intro .pc {
+  width: 80%;
+  height: 50rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0 150px 0 150px;
+}
+
+.protfolio .protfolio_intro .pc a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.protfolio .protfolio_intro .pc img {
+  max-width: 100%;
+}
+
+.protfolio .protfolio_intro .mobile {
+  width: 35%;
+  height: 34rem;
+  overflow: hidden;
+  position: absolute;
+  right: 1rem;
+  bottom: 0rem;
+}
+
+.protfolio .protfolio_intro .mobile:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/mobile_bg.png) no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.protfolio .protfolio_intro .mobile > div {
+  position: absolute;
+  z-index: 0;
+  width: 88%;
+  left: 16px;
+  top: 16px;
+  height: 32.0625rem;
+  overflow: hidden;
+}
+
+.protfolio .protfolio_intro .mobile img {
+  max-width: 100%;
+}
+
+.top_btn {
+  opacity: 0;
+  position: fixed;
+  width: auto;
+  height: auto;
+  right: 3rem;
+  bottom: 1rem;
+  background: url(../images/top.png) no-repeat 50% 0;
+  border: none;
+  font-family: 'NanumSquare', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-size: 15px;
+  padding-top: 1rem;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.top_btn.go_top {
+  opacity: 1;
+  bottom: 2rem;
+  z-index: 9;
+}
+
+.top_btn.ft_on {
+  bottom: 5rem;
+}
