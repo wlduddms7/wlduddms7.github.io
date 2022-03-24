@@ -1,0 +1,449 @@
+@media (min-width: 800px) {
+  header h1:hover a {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #303030;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1800px) {
+  html,
+  body {
+    font-size: 90%;
+  }
+  .main > div h1,
+  .main > div h2 {
+    font-size: 9rem;
+  }
+  .main > div h1 span,
+  .main > div h2 span {
+    font-size: 9rem;
+  }
+  .main > div > div > div ul li {
+    margin-right: 0.5rem;
+  }
+  .protfolio .protfolio_intro .mobile {
+    border-radius: 40px;
+    height: 32rem;
+  }
+  .protfolio .protfolio_intro .mobile > div {
+    height: calc(100% - 22px);
+  }
+}
+
+@media (max-width: 1600px) {
+  .main > div h1,
+  .main > div h2 {
+    font-size: 8rem;
+  }
+  .main > div h1 span,
+  .main > div h2 span {
+    font-size: 8rem;
+  }
+  .main > div > div > div {
+    width: 30%;
+  }
+  .protfolio > div {
+    width: 90%;
+  }
+  .protfolio .protfolio_intro .pc {
+    height: 43rem;
+  }
+  .protfolio .protfolio_intro .mobile {
+    height: 27rem;
+    border-radius: 0;
+  }
+  .protfolio .protfolio_intro .mobile::before {
+    background-size: 100% 100%;
+  }
+  .protfolio .protfolio_intro .mobile > div {
+    top: 0.6875rem;
+    left: 0.75rem;
+  }
+  .protfolio.protfolio_last .last {
+    width: 90%;
+  }
+  .protfolio.protfolio_last .protfolio_intro .pc {
+    height: 31rem;
+  }
+  .about > div > div {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1400px) {
+  html,
+  body {
+    font-size: 80%;
+  }
+  .main > div h1 span,
+  .main > div h2 span {
+    display: block;
+  }
+  .about > div > div {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1200px) {
+  h3,
+  h3 span {
+    font-size: 2.5rem;
+  }
+  .protfolio .pf_title > p {
+    font-size: 1.8rem;
+  }
+  .protfolio .pf_title > div p {
+    font-size: 1.8rem;
+  }
+  .protfolio.protfolio_odd .protfolio_intro .pc {
+    border-radius: 80px 0 80px 0;
+  }
+  .protfolio .protfolio_intro .pc {
+    border-radius: 0 80px 0 80px;
+  }
+  .main > div h1,
+  .main > div h2 {
+    font-size: 7rem;
+    width: 100%;
+  }
+  .main > div h1 span,
+  .main > div h2 span {
+    font-size: 7rem;
+    display: inline-block;
+  }
+  .main > div > div {
+    display: block;
+    text-align: right;
+  }
+  .main > div > div > div {
+    width: 100%;
+  }
+  .protfolio .protfolio_intro .mobile {
+    height: 22rem;
+  }
+  .protfolio.protfolio_last .protfolio_intro .pc {
+    height: 27rem;
+  }
+  .about > div > div > div {
+    width: 58%;
+  }
+  .about > div > div > div > ul > li > span::before {
+    right: 7px;
+  }
+  .top_btn.go_top {
+    bottom: 5rem;
+  }
+  .sub > ul li {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main > div h1,
+  .main > div h2 {
+    font-size: 6rem;
+  }
+  .main > div h1 span,
+  .main > div h2 span {
+    font-size: 6rem;
+  }
+  .protfolio {
+    overflow: hidden;
+  }
+  .protfolio > div {
+    width: 100% !important;
+  }
+  .protfolio .protfolio_intro .pc {
+    height: 31rem;
+  }
+  .protfolio .protfolio_intro .mobile {
+    height: 17rem;
+  }
+  .protfolio.protfolio_last .protfolio_intro .pc {
+    height: 21rem;
+  }
+  .protfolio.protfolio_last > div > .more {
+    right: 1rem;
+  }
+  .protfolio.protfolio_last > div > .more span {
+    right: 0;
+  }
+  .protfolio.protfolio_last .last {
+    width: 100%;
+  }
+  .about > div > div > div > ul::before {
+    left: calc(30% - 1px);
+  }
+  .about > div > div > div > ul > li > span {
+    width: 30%;
+  }
+  .about > div > div > div > ul > li > div {
+    width: 70%;
+  }
+  @-webkit-keyframes cursor_ani {
+    0% {
+      right: 0;
+      bottom: -3.25rem;
+    }
+    100% {
+      right: 0;
+      bottom: -1.25rem;
+    }
+  }
+  @keyframes cursor_ani {
+    0% {
+      right: 0;
+      bottom: -3.25rem;
+    }
+    100% {
+      right: 0;
+      bottom: -1.25rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .pc_none {
+    display: block;
+  }
+  .protfolio.protfolio_odd .protfolio_intro .pc {
+    border-radius: 0 80px 0 80px;
+    margin-left: 0;
+  }
+  .protfolio.protfolio_odd .protfolio_intro .mobile {
+    left: auto;
+    right: 4rem;
+  }
+  .protfolio > div {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    width: 100% !important;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .protfolio.protfolio_last .last {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    width: 100% !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .protfolio.protfolio_last .last .protfolio_intro .pc {
+    height: 30rem;
+  }
+  .protfolio .pf_title {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .protfolio .protfolio_intro {
+    width: 100%;
+  }
+  .protfolio .protfolio_intro .pc {
+    height: 37rem;
+    width: 67%;
+  }
+  .protfolio .protfolio_intro .mobile {
+    width: 30%;
+    height: 26rem;
+    right: 4rem;
+  }
+  .about > div .footer {
+    position: static;
+  }
+  .about > div > div {
+    display: block;
+  }
+  .about > div > div .img_wrap {
+    margin: 0 auto;
+    width: 48%;
+  }
+  .about > div > div > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  header h1 a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    font-size: 70%;
+  }
+  h3,
+  h3 span {
+    font-size: 2rem;
+  }
+  .main > div h1,
+  .main > div h2 {
+    font-size: 3rem;
+  }
+  .main > div h1 span,
+  .main > div h2 span {
+    font-size: 3rem;
+  }
+  .main > div > div > div {
+    margin-bottom: 3rem;
+  }
+  .protfolio .pf_title h3 {
+    margin-bottom: 1rem;
+  }
+  .protfolio .pf_title > span {
+    width: 60px;
+  }
+  .protfolio .pf_title > p {
+    font-size: 1.4rem;
+  }
+  .protfolio .pf_title > p:before {
+    height: 80%;
+    left: 5px;
+    bottom: -5px;
+  }
+  .protfolio .pf_title > div {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .protfolio .pf_title > div p {
+    font-size: 1.3rem;
+  }
+  .protfolio.protfolio_last > div > .more {
+    bottom: 5rem;
+    right: auto;
+    left: 0rem;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .protfolio.protfolio_last > div > .more a {
+    font-size: 1.5rem;
+  }
+  .protfolio.protfolio_last > div > .more span {
+    width: 3rem;
+    height: 3rem;
+  }
+  .protfolio .protfolio_intro .pc {
+    width: 75%;
+    height: 32rem;
+  }
+  .protfolio .protfolio_intro .mobile {
+    width: 40%;
+    right: 1rem !important;
+    height: 23rem;
+  }
+  .protfolio.protfolio_last .last .protfolio_intro .pc a img {
+    height: 100%;
+  }
+  .top_btn {
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.5) url(../images/top.png) no-repeat 50% 0;
+    background-size: 15px;
+  }
+  @-webkit-keyframes cursor_ani {
+    0% {
+      right: 0rem;
+      bottom: -3.25rem;
+    }
+    100% {
+      right: 8rem;
+      bottom: -1.25rem;
+    }
+  }
+  @keyframes cursor_ani {
+    0% {
+      right: 0rem;
+      bottom: -3.25rem;
+    }
+    100% {
+      right: 8rem;
+      bottom: -1.25rem;
+    }
+  }
+  .about {
+    height: auto !important;
+    padding-top: 5rem;
+  }
+  .about h3 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  .about h3 span {
+    font-size: 2.5rem;
+  }
+  .about > div {
+    height: auto !important;
+  }
+  .about > div > div {
+    margin-bottom: 3rem;
+  }
+  .about > div > div > div * {
+    font-size: 1.3rem;
+  }
+  .about > div > div > div > ul:before {
+    left: calc(30% - 3px);
+  }
+  .about > div > div > div > ul > li p,
+  .about > div > div > div > ul > li span {
+    font-size: 1.3rem;
+  }
+  .about > div > div > div > ul > li > span {
+    padding-top: 0.7rem;
+  }
+  .about > div > div > div > ul > li div .career li {
+    margin: 10px 0;
+  }
+  .about > div > div > div > ul > li div .career li:first-child {
+    margin-top: 0;
+  }
+  .about > div > div > div > ul > li div .career li span {
+    display: block;
+  }
+  .about > div > div figure {
+    padding: 3rem 2rem 5rem 2rem;
+  }
+  .about > div > div .img_wrap {
+    width: 65%;
+    margin-bottom: 3rem;
+  }
+  .about > div .footer {
+    margin-bottom: 0;
+  }
+  .about > div .footer > div {
+    margin-top: 0;
+  }
+  .sub > ul li {
+    width: 50%;
+  }
+  header h1 a {
+    font-size: 1.5rem;
+  }
+  .sub > p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+  .sub > ul li > div h2 {
+    height: 2.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sub > ul li > div h2 a {
+    font-size: 1.4rem;
+    word-break: keep-all;
+    line-height: 1.3;
+  }
+}
+/*# sourceMappingURL=media.css.map */
