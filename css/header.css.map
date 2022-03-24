@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "header.sass",
-        "_var.sass"
+        "../sass/header.sass",
+        "../sass/_var.sass"
     ],
     "names": [],
     "file": "header.css"

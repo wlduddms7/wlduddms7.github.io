@@ -318,11 +318,12 @@ h3 span {
 
 .about > div .footer {
   width: 100%;
+  margin-top: 3rem;
 }
 
 .about > div .footer > div {
   width: 100%;
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 .about > div .footer > div p {
@@ -967,7 +968,7 @@ h3 span {
 
 .top_btn.go_top {
   opacity: 1;
-  bottom: 2rem;
+  bottom: 3rem;
   z-index: 9;
 }
 
@@ -983,3 +984,4 @@ h3 span {
   width: 100%;
   text-transform: uppercase;
 }
+/*# sourceMappingURL=main.css.map */
