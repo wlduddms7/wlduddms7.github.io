@@ -323,7 +323,7 @@ h3 span {
 
 .about > div .footer > div {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 0;
 }
 
 .about > div .footer > div p {
@@ -653,10 +653,6 @@ h3 span {
   height: 100%;
 }
 
-.protfolio.protfolio_last .protfolio_intro .pc {
-  height: 39rem;
-}
-
 .protfolio.protfolio_odd > div {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -777,19 +773,19 @@ h3 span {
 }
 
 .protfolio .pf_title.pf_title5 > span {
-  background-color: #18aee4;
+  background-color: #606daf;
 }
 
 .protfolio .pf_title.pf_title5 h3 {
-  color: #18aee4;
+  color: #606daf;
 }
 
 .protfolio .pf_title.pf_title5 h3:before {
-  background: #18aee4;
+  background: #606daf;
 }
 
 .protfolio .pf_title.pf_title5 > p:before {
-  background: #18aee4;
+  background: #606daf;
 }
 
 .protfolio .pf_title * {
@@ -968,7 +964,7 @@ h3 span {
 
 .top_btn.go_top {
   opacity: 1;
-  bottom: 3rem;
+  bottom: 2rem;
   z-index: 9;
 }
 
@@ -984,4 +980,3 @@ h3 span {
   width: 100%;
   text-transform: uppercase;
 }
-/*# sourceMappingURL=main.css.map */

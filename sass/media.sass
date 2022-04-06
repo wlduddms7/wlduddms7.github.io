@@ -49,8 +49,6 @@
         &.protfolio_last 
             .last
                 width: 90%
-            .protfolio_intro .pc
-                height: 31rem
     .about > div > div
         width: 75%
 @media (max-width: 1400px)
@@ -97,8 +95,6 @@
     .protfolio 
         .protfolio_intro .mobile
             height: 22rem
-        &.protfolio_last .protfolio_intro .pc
-            height: 27rem
     .about > div > div > div
         width: 58%
         > ul > li > span::before 
@@ -117,30 +113,47 @@
                     font-size: 6rem
     .protfolio 
         overflow: hidden
+        height: auto !important
+        display: block
+        padding: 6rem 0
         > div
             width: 100% !important
+            height: auto !important
+            display: flex
         .protfolio_intro 
             .pc
                 height: 31rem
             .mobile
                 height: 17rem
         &.protfolio_last 
-            .protfolio_intro .pc
-                height: 21rem
             > div > .more
                 right: 1rem
                 span
                     right: 0
             .last
                 width: 100%
-    .about > div > div > div > ul 
-        &::before
-            left: calc(30% - 1px)
-        > li 
-            > span
-                width: 30%
-            > div
-                width: 70%
+    .fp-auto-height.fp-section.about 
+        height: 100vh !important
+        padding-top: 8rem
+        > div 
+            display: block
+            .footer
+                position: absolute
+                bottom: 0
+                > div
+                    padding-top: 1rem
+            > div 
+                flex-direction: column
+                .img_wrap
+                    margin-bottom: 5rem
+                > div > ul 
+                    &::before
+                        left: calc(30% - 1px)
+                    > li 
+                        > span
+                            width: 30%
+                        > div
+                            width: 70%
     @keyframes cursor_ani 
         0% 
             right: 0
@@ -167,8 +180,6 @@
             flex-direction: column-reverse !important
             width: 100% !important
             justify-content: flex-end
-            .protfolio_intro .pc
-                height: 30rem
         .pf_title
             width: 100%
             margin-top: 3rem
@@ -181,17 +192,20 @@
                 width: 30%
                 height: 26rem
                 right: 4rem
-    .about > div 
-        .footer
-            position: static
-        > div
-            display: block
-            .img_wrap
-                margin: 0 auto
-                width: 48%
+    .about
+        &.fp-auto-height.fp-section
+            height: auto !important
+            padding-bottom: 8rem
+        > div 
+            .footer
+                position: static
             > div
-                width: 100%
-                margin-top: 2rem
+                display: block
+                .img_wrap
+                    margin: 0 auto
+                    width: 48%
+                > div
+                    width: 100%
     header h1 a
         font-size: 2rem
 @media (max-width: 640px)
@@ -210,7 +224,9 @@
                     font-size: 3rem
             > div > div
                 margin-bottom: 3rem
-    .protfolio 
+    .protfolio
+        margin-top: -7rem
+        padding-top: 7rem
         .pf_title 
             h3
                 margin-bottom: 1rem
@@ -228,7 +244,7 @@
                 p
                     font-size: 1.3rem
         &.protfolio_last > div > .more 
-            bottom: 5rem
+            bottom: 2rem
             right: auto
             left: 0rem
             width: 100%
@@ -239,6 +255,7 @@
             span
                 width: 3rem
                 height: 3rem
+                bottom: -2rem
         .protfolio_intro 
             .pc
                 width: 75%
@@ -253,17 +270,18 @@
         right: 1rem
         background: rgba(255,255,255,0.5) url(#{$assetPath}/top.png) no-repeat 50% 0
         background-size: 15px
-    
     @keyframes cursor_ani 
         0% 
             right: 0rem
-            bottom: -3.25rem
+            bottom: -2rem
         100% 
             right: 8rem
             bottom: -1.25rem
     .about 
         height: auto !important
         padding-top: 5rem
+        &.fp-auto-height.fp-section
+            padding-bottom: 4rem
         h3
             margin-bottom: 3rem
             font-size: 2.5rem
