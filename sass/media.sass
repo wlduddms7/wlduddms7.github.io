@@ -1,4 +1,7 @@
 @import "_var"
+@media (min-width: 2000px)
+    .protfolio .protfolio_intro .mobile
+        width: 280px
 @media (min-width: 800px)
     header h1:hover a
         -webkit-text-stroke-width: 2px
@@ -68,7 +71,7 @@
     h3 span
         font-size: 2.5rem
     .protfolio .pf_title 
-        > p
+        > p a
             font-size: 1.8rem
         > div p
             font-size: 1.8rem
@@ -233,11 +236,12 @@
             > span
                 width: 60px
             > p
-                font-size: 1.4rem
                 &:before
                     height: 80%
                     left: 5px
                     bottom: -5px
+                a
+                    font-size: 1.4rem
             > div
                 margin: 0
                 margin-top: 1rem

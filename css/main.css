@@ -822,8 +822,6 @@ h3 span {
 }
 
 .protfolio .pf_title > p {
-  font-size: 2.5rem;
-  font-weight: 700;
   position: relative;
   opacity: 0;
   -webkit-transition: 1s;
@@ -847,6 +845,11 @@ h3 span {
           transition-delay: .4s;
   opacity: 0.3;
   z-index: -1;
+}
+
+.protfolio .pf_title > p a {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .protfolio .pf_title > div {
@@ -931,7 +934,7 @@ h3 span {
 .protfolio .protfolio_intro .mobile > div {
   position: absolute;
   z-index: 0;
-  width: 88%;
+  width: 89%;
   left: 16px;
   top: 16px;
   height: 32.0625rem;
@@ -980,3 +983,4 @@ h3 span {
   width: 100%;
   text-transform: uppercase;
 }
+/*# sourceMappingURL=main.css.map */
