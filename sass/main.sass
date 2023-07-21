@@ -41,6 +41,11 @@
     100%
         bottom: rem(-20)
         right: rem(18)
+@keyframes opacity_ani 
+    0%
+        opacity: 0
+    100%
+        opacity: 1
 .main
     > div
         +flex_type($justify: space-between, $align: flex-start)
@@ -55,12 +60,12 @@
         h1,
         h2
             text-align: left
-            +font_Hahmlet_600
+            font-weight: 600
             font-size: 11rem
             position: relative
             display: inline-block
             span
-                +font_Hahmlet_800
+                font-weight: 700
                 vertical-align: 0
                 font-size: 11rem
         h2
@@ -84,7 +89,7 @@
                 ul
                     li
                         display: inline-block
-                        +font_Hahmlet_600
+                        font-weight: 600
                         font-size: 2rem
                         margin-right: 1rem
                         line-height: 1.3
@@ -92,10 +97,9 @@ h3
     text-align: center
     font-size: 4rem
     margin-bottom: 5rem
-    +font_Hahmlet_600
+    font-weight: 600
     span
         font-size: 4rem
-        +font_Hahmlet_800
         vertical-align: 0
         font-weight: 700
 .about
@@ -137,6 +141,11 @@ h3
                                     transition-delay: .8s
                                 > div
                                     transition-delay: .9s
+                            &:nth-child(4)
+                                > span
+                                    transition-delay: 1.1s
+                                > div
+                                    transition-delay: 1.2s
     h3
         position: relative
         top: 3rem
@@ -150,7 +159,6 @@ h3
             > div
                 width: 100%
                 p
-                    +NanumSquare 
                     font-size: 10px 
         > div
             +flex_type($justify: space-between, $align: center)
@@ -182,9 +190,9 @@ h3
                 img
                     max-width: 100%
             > div
-                width: 53%
+                width: 57%
                 *
-                    +font_Hahmlet_600
+                    font-weight: 600
                     font-size: 1.5rem
                 > ul
                     position: relative
@@ -201,7 +209,7 @@ h3
                             margin-bottom: 0.6rem
                             display: block
                             font-size: 1.7rem
-                            +font_Hahmlet_800
+                            font-weight: 800
                             width: 20%
                             position: relative
                             line-height: 1
@@ -227,17 +235,20 @@ h3
                                     font-size: 1.3rem
                                     display: inline-block
                                     color: #303030
-                            .career
+                            .career,
+                            .certificate
                                 li
                                     line-height: 1.5
                                     span
                                         display: inline-block
+                                        margin-right: 12px
                                     p
                                         display: inline-block
                         p
                             display: block
                             font-size: 1.7rem
                 .skill
+                    margin-top: 7px
                     li
                         display: inline-block
                         margin-right: 1rem
@@ -280,6 +291,8 @@ h3
         &.protfolio_last
             > div
                 > .more
+                    animation: opacity_ani 1s ease-in-out forwards
+                    animation-delay: .4s
                     a
                         animation: scale_ani 1s ease-in-out infinite
                         animation-delay: .5s
@@ -294,12 +307,13 @@ h3
             margin: 0 auto
             > .more
                 text-align: right
+                opacity: 0
                 +positionAt(absolute, $bottom: 6rem, $right: 9rem)
                 padding-right: 3rem
                 a
                     font-size: 2rem
                     font-weight: 700
-                    +font_Hahmlet_800
+                    font-weight: 800
                     display: inline-block
                 span
                     display: inline-block
@@ -364,13 +378,13 @@ h3
                     background: -webkit-linear-gradient(-45deg, #3372b7, #e2485e)
         &.pf_title3
             > span
-                background-color: #4e5cbc
+                background-color: #00cd31
             h3
-                color: #4e5cbc
+                color: #00cd31
                 &:before
-                    background: #4e5cbc
+                    background: #00cd31
             > p:before
-                    background: #4e5cbc
+                    background: #00cd31
         &.pf_title4
             > span
                 background-color: #6f60a4
@@ -390,7 +404,7 @@ h3
             > p:before
                     background: #606daf
         *
-            +font_Hahmlet_600
+            font-weight: 600
         > span
             width: 90px
             height: 30px
@@ -405,7 +419,7 @@ h3
             text-align: left
             margin-bottom: 2rem
             text-transform: uppercase
-            +font_Hahmlet_800
+            font-weight: 800
             position: relative
             display: inline-block
             &:before
@@ -458,24 +472,32 @@ h3
             img
                 max-width: 100%
         .mobile
-            width: 35%
-            height: 34rem
             overflow: hidden
+            width: 17.5rem
+            height: 35.25rem
             +positionAt(absolute,  $right: 1rem, $bottom: -7rem)
             opacity: 0
             transition: 1s
             transition-delay: .3s
-            &:before
-                +before($widthB: 100%, $heightB: 100%, $topB: 0, $leftB: 0, $bgB : url(#{$assetPath}/mobile_bg.png) no-repeat)
+            .mobile_bg
+                background: url(#{$assetPath}/mobile_bg.png) no-repeat
                 background-size: contain
-                z-index: 2
-            > div
+                width: 100%
+                height: 100%
+                position: absolute
+                z-index: 1
+                border-radius: 44px
+            // &:before
+            //     +before($widthB: 100%, $heightB: 100%, $topB: 0, $leftB: 0, $bgB : url(#{$assetPath}/mobile_bg.png) no-repeat)
+            //     background-size: contain
+            //     z-index: 2
+            > a div:not(.mobile_bg)
                 position: absolute
                 z-index: 0
                 width: 89%
-                left: 16px
-                top: 16px
-                height: 32.0625rem
+                left: rem(16)
+                top: rem(16)
+                height: 94%
                 overflow: hidden
             img
                 max-width: 100%
@@ -488,7 +510,6 @@ h3
     bottom: 1rem
     background: url(#{$assetPath}/top.png) no-repeat 50% 0 
     border: none
-    +NanumSquare
     font-weight: 700
     font-size: 1.5rem
     background-size: 15px
@@ -504,7 +525,7 @@ h3
         bottom: 5rem
 .pc_none
     display: none
-    +font_Hahmlet_600
+    font-weight: 600
     font-size: 1rem
     text-align: right
     width: 100%
