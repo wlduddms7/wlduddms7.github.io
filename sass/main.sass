@@ -251,8 +251,24 @@ footer a span
     -webkit-mask: url(/images/top.svg) no-repeat center
     mask: url(/images/top.svg) no-repeat center
     mask-size: contain
+// .custom_cursor
+//     position: fixed
+//     width: 60px
+//     height: 60px
+//     cursor: none
+//     box-shadow: 0 0 15px rgba(0,0,0,0.2)
+//     transform: translate(-50%, -50%)
+//     border: 1px solid rgba(0, 0, 0, 0.1)
+//     backdrop-filter: blur(3px)
+//     border-radius: 50%
+//     z-index: 9999
+//     backdrop-filter: invert(80%)
+//     transform: translate(-50%, -50%)
+body, html
+    cursor: url(/images/cursor_custom.cur), auto
 // 다크모드
 body.dark-mode
+    cursor: url(/images/cursor_custom_white.cur), auto
     background-color: #000
     #mode_btn
         background: #fff
@@ -278,6 +294,8 @@ body.dark-mode
         background: #5b5b5b
     footer a span
         background-color: white
+    html
+        cursor: url(/images/cursor_custom_white.cur), auto
 .arrow > svg
     width: 18.75rem
     height: 26.25rem
