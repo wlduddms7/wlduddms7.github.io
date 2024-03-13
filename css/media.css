@@ -26,6 +26,9 @@
   }
 }
 @media (max-width: 1024px) {
+  #main {
+    font-size: 7rem;
+  }
   .get_into ul {
     font-size: 1.4rem;
   }
