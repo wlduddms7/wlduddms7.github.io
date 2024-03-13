@@ -1,4 +1,7 @@
-@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html,
 body,
@@ -87,9 +90,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'NanumSquareNeo-Variable';
-  font-size: 1rem;
-  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -134,18 +134,8 @@ table {
   border-spacing: 0;
 }
 
-input:focus {
-  outline: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@font-face {
-  font-family: 'Hahmlet-ExtraBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-ExtraBold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+/*test*/
+a:focus,
+.check_style1:focus {
+  outline: 1px solid red
 }

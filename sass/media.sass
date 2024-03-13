@@ -1,355 +1,86 @@
-@import "_var"
+
+// 반응형
+@media (min-width: 1921px) 
+    html,
+    body
+        font-size: 0.83333333vw
+@media (max-width: 1920px) 
+    html,
+    body
+        font-size: 100% 
+@media (max-width: 1620px) 
+    html,
+    body
+        font-size: 80%
+    .arrow > svg
+        height: 24.25rem
+    #main
+        font-size: 9rem
+    .letter, .letter2, .letter3
+        height: 12rem
+@media (max-width: 1024px) 
+    .get_into  
+        ul
+            font-size: 1.4rem
+    footer
+        font-size: 1.2rem
+    .list_ul_wrap
+        li
+            padding: 0 0.625rem
+
+@media (max-width: 800px)
+    html,
+    body
+        font-size: 65%
+    #main
+        font-size: 5rem
+    .letter, .letter2, .letter3
+        height: 7rem
+    .get_into 
+        .number
+            margin-top: 2rem
+        figure
+            margin-bottom: 2rem
+            width: 70%
+@media (max-width: 640px)
+    #main
+        font-size: 3rem
+    .letter, .letter2, .letter3
+        height: 4rem
+        span
+            margin-right: 1px 
+    .get_into 
+        > div:first-child
+            margin-left: 7rem
+        .number
+            margin-right: 0
+            margin-top: 0
+            transform: translateY(12px)
+            top: -5rem
+            left: -6rem
+    .port_title
+        &:before
+            display: none
+        span
+            display: block
+    .view_btn a
+        width: 10rem
+        height: 10rem
+        font-size: 1.5rem
+    .info_text
+        ul li 
+            font-size: 1.2rem
+            line-height: 1
+            margin-bottom: 2rem
+            span
+                display: block
+                font-size: 1.5rem
+                margin-bottom: 1rem
+    footer
+        font-size: 1rem
+        > a
 @media (min-width: 800px)
     header h1:hover a
         -webkit-text-stroke-width: 2px
         -webkit-text-stroke-color: #303030
         color: #fff
-@media (max-width: 1800px)
-    html,
-    body
-        font-size: 90%
-    .main
-        > div
-            h1,
-            h2
-                font-size: 9rem
-                span
-                    font-size: 9rem
-            > div > div ul li
-                margin-right: 0.5rem
-    .about > div > div
-        width: 85%
-        .img_wrap
-            width: 30%
-        > div
-            width: 66%
-@media (max-width: 1600px)
-    .main
-        > div
-            h1,
-            h2
-                font-size: 8rem
-                span
-                    font-size: 8rem
-            > div > div
-                width: 30%
-    .protfolio 
-        > div
-            width: 90%
-        .protfolio_intro 
-            .pc
-                height: 43rem
-            .mobile
-                > div
-                    top: rem(11)
-                    left: rem(12)
-        &.protfolio_last 
-            .last
-                width: 90%
-@media (max-width: 1400px)
-    html,
-    body
-        font-size: 80%
-    .main
-        > div
-            h1,
-            h2
-                span
-                    display: block
-    .about > div > div
-        width: 85%
-@media (max-width: 1200px)
-    h3,
-    h3 span
-        font-size: 2.5rem
-    .protfolio .pf_title 
-        > p a
-            font-size: 1.8rem
-        > div p
-            font-size: 1.8rem
-    .protfolio
-        &.protfolio_odd 
-            .protfolio_intro .pc
-                border-radius: 80px 0 80px 0
-        .protfolio_intro .pc
-            border-radius: 0 80px 0 80px
-    .main
-        > div
-            h1,
-            h2
-                font-size: 7rem
-                width: 100%
-                span
-                    font-size: 7rem
-                    display: inline-block
-            > div
-                display: block
-                text-align: right
-                > div
-                    width: 100%
-    .protfolio .pf_title 
-        h3
-            margin-bottom: 10px
-        > div
-            margin: 2rem 0
-        p:before
-            left: 8px
-            bottom: 0
-    .about > div > div > div
-        > ul
-            &:before
-                left: calc(27.5% - 1px)
-                top: 18px
-            > li > span
-                width: 30%
-                &::before 
-                    top: 8px
-                    right: 7px
-    .top_btn.go_top
-        bottom: 5rem
-    .sub > ul li
-        width: 33.33%
-@media (max-width: 1024px)
-    .main
-        > div
-            h1,
-            h2
-                font-size: 6rem
-                span
-                    font-size: 6rem
-    .protfolio 
-        overflow: hidden
-        height: auto !important
-        display: block
-        padding: 6rem 0
-        > div
-            width: 100% !important
-            height: auto !important
-            display: flex
-        .protfolio_intro 
-            .pc
-                height: 31rem
-            .mobile
-                width: 135px
-                height: 270px
-                .mobile_bg
-                    border-radius: 0
-                > a div:not(.mobile_bg)
-                    left: 6px
-                    top: 7px
-        &.protfolio_last 
-            > div > .more
-                right: 1rem
-                span
-                    right: 0
-            .last
-                width: 100%
-    .fp-auto-height.fp-section.about 
-        height: 100vh !important
-        padding-top: 8rem
-        > div 
-            display: block
-            .footer
-                position: absolute
-                bottom: 0
-                > div
-                    padding-top: 1rem
-            > div 
-                flex-direction: column
-                .img_wrap
-                    margin-bottom: 5rem
-                > div > ul 
-                    &::before
-                        left: calc(30% - 1px)
-                    > li 
-                        > span
-                            width: 30%
-                        > div
-                            width: 70%
-    @keyframes cursor_ani 
-        0% 
-            right: 0
-            bottom: -3.25rem
-        100% 
-            right: 0
-            bottom: -1.25rem
-@media (max-width: 800px)
-    .pc_none
-        display: block
-    .protfolio 
-        &.protfolio_odd .protfolio_intro 
-            .pc
-                border-radius: 0 80px 0 80px
-                margin-left: 0
-            .mobile
-                left: auto
-                right: 7rem
-        > div
-            flex-direction: column-reverse !important
-            width: 100% !important
-            justify-content: flex-start
-        &.protfolio_last .last
-            flex-direction: column-reverse !important
-            width: 100% !important
-            justify-content: flex-end
-        .pf_title
-            width: 100%
-            margin-top: 3rem
-        .protfolio_intro
-            width: 100%
-            .pc
-                height: 37rem
-                width: 67%
-            .mobile
-                right: 7rem !important
-    .about
-        &.fp-auto-height.fp-section
-            height: auto !important
-            padding-bottom: 8rem
-        > div 
-            .footer
-                position: static
-            > div
-                display: block
-                .img_wrap
-                    margin: 0 auto
-                    width: 48%
-                    margin-bottom: 2rem
-                > div
-                    width: 100%
-                    > ul > li p
-                        font-size: 1.5rem
-    header h1 a
-        font-size: 2rem
-@media (max-width: 640px)
-    html,
-    body
-        font-size: 70%
-    h3, 
-    h3 span
-        font-size: 2rem
-    .main
-        > div
-            h1,
-            h2
-                font-size: 3rem
-                span
-                    font-size: 3rem
-            > div > div
-                margin-bottom: 3rem
-    .protfolio
-        margin-top: -7rem
-        padding-top: 7rem
-        .pf_title 
-            h3
-                margin-bottom: 1rem
-            > span
-                width: 60px
-            > p
-                &:before
-                    height: 80%
-                    left: 5px
-                    bottom: -5px
-                a
-                    font-size: 1.4rem
-            > div
-                margin: 0
-                margin-top: 1rem
-                p
-                    font-size: 1.3rem
-        &.protfolio_last > div > .more 
-            bottom: 2rem
-            right: auto
-            left: 0rem
-            width: 100%
-            text-align: center
-            padding-right: 0
-            a
-                font-size: 1.5rem
-            span
-                width: 3rem
-                height: 3rem
-                bottom: -2rem
-        .protfolio_intro 
-            .pc
-                width: 75%
-                height: 32rem
-            .mobile
-                width: 40%
-                right: 1rem !important
-                height: 23rem
-        &.protfolio_last .last .protfolio_intro .pc a img
-            height: 100%
-    .top_btn
-        right: 1rem
-        background: rgba(255,255,255,0.5) url(#{$assetPath}/top.png) no-repeat 50% 0
-        background-size: 15px
-    @keyframes cursor_ani 
-        0% 
-            right: 0rem
-            bottom: -2rem
-        100% 
-            right: 8rem
-            bottom: -1.25rem
-    .about 
-        height: auto !important
-        padding-top: 5rem
-        &.fp-auto-height.fp-section
-            padding-bottom: 4rem
-        h3
-            margin-bottom: 3rem
-            font-size: 2.5rem
-            span
-                font-size: 2.5rem
-        > div 
-            height: auto !important
-            > div 
-                margin-bottom: 3rem
-                > div 
-                    *
-                        font-size: 1.3rem
-                    > ul 
-                        &:before
-                            left: calc(27.5% - 3px)
-                            height: 93% !important
-                            top: 14px
-                        > li
-                            padding-left: 0
-                            p
-                                font-size: 1.3rem
-                                &:before
-                                    top: 4px
-                            span
-                                font-size: 1.3rem
-                                width: 33%
-                            div .career li 
-                                margin: 10px 0
-                                &:first-child
-                                    margin-top: 0
-                                span
-                                    display: block
-                                    width: 100%
-                figure
-                    padding: 3rem 2rem 5rem 2rem
-                .img_wrap
-                    width: 65%
-                    margin-bottom: 3rem
-            .footer
-                margin-bottom: 0
-                > div
-                    margin-top: 0
-    .sub > ul li
-        width: 50%
-    header h1 a
-        font-size: 1.5rem
-    .sub 
-        > p
-            font-size: 1.4rem
-            margin-bottom: 3rem
-        > ul li > div h2 
-            height: rem(38)
-            +flex_type($justify: center, $align: center)
-            a
-                font-size: 1.4rem
-                word-break: keep-all
-                line-height: 1.3
