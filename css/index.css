@@ -304,12 +304,6 @@ html {
   bottom: 0;
   z-index: -1;
 }
-.view_btn > a:hover {
-  color: #fff;
-}
-.view_btn > a:hover:before {
-  height: 100%;
-}
 .view_btn:before {
   position: absolute;
   content: "";
@@ -463,7 +457,7 @@ body.dark-mode html {
 }
 @media (max-width: 640px) {
   #main {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
   .letter, .letter2, .letter3 {
     height: 4rem;
@@ -534,9 +528,15 @@ body.dark-mode html {
     color: #fff;
   }
   .view_btn > a:hover {
+    color: #fff;
+  }
+  .view_btn > a:hover:before {
+    height: 100%;
+  }
+  body.dark-mode .view_btn > a:hover {
     color: #000;
   }
-  .view_btn > a:before {
+  body.dark-mode .view_btn > a:before {
     background: #fff;
   }
   .hover_ani:hover > div {

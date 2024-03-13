@@ -303,12 +303,6 @@ html {
   bottom: 0;
   z-index: -1;
 }
-.view_btn > a:hover {
-  color: #fff;
-}
-.view_btn > a:hover:before {
-  height: 100%;
-}
 .view_btn:before {
   position: absolute;
   content: "";
