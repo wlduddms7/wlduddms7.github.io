@@ -156,8 +156,6 @@ html
         transform: rotate(0deg)
     to
         transform: rotate(360deg)
-.hover_ani:hover > div
-    animation: shake_ani 0.6s
 // sub
 .sub
     > p
@@ -169,20 +167,6 @@ html
         &:nth-child(4),
         &:nth-child(6)
             animation-delay: 0.3s
-        &:hover > figure
-            animation: shake_ani 0.6s
-
-@keyframes shake_ani 
-    0% 
-        transform: rotate(0deg)
-    25% 
-        transform: rotate(-8deg)
-    50% 
-        transform: rotate(8deg)
-    75% 
-        transform: rotate(-8deg)
-    100% 
-        transform: rotate(0deg)
 
 @keyframes top_ani 
     0% 
@@ -251,19 +235,6 @@ footer a span
     -webkit-mask: url(/images/top.svg) no-repeat center
     mask: url(/images/top.svg) no-repeat center
     mask-size: contain
-// .custom_cursor
-//     position: fixed
-//     width: 60px
-//     height: 60px
-//     cursor: none
-//     box-shadow: 0 0 15px rgba(0,0,0,0.2)
-//     transform: translate(-50%, -50%)
-//     border: 1px solid rgba(0, 0, 0, 0.1)
-//     backdrop-filter: blur(3px)
-//     border-radius: 50%
-//     z-index: 9999
-//     backdrop-filter: invert(80%)
-//     transform: translate(-50%, -50%)
 body, html
     cursor: url(/images/cursor_custom.cur), auto
 // 다크모드
@@ -284,12 +255,6 @@ body.dark-mode
     svg *
         stroke: white !important
     
-    .view_btn
-        > a
-            &:hover
-                color: #000
-            &:before
-                background: #fff
     .port_title:before
         background: #5b5b5b
     footer a span

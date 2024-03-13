@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.cdnfonts.com/css/butler" rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!-- 메타태그 -->
 	<meta property="og:url" content="https://wlduddms7.github.io/sub.html" />
 	<meta property="og:title" content="지영은의 포트폴리오">
@@ -21,7 +22,7 @@
 </head>
 
 <body class="bg-[#fff]">
-	<header class="p-[2rem]">
+	<header class="p-[2rem] sub_header">
 		<h1 class="text-[2.5rem] font-black butler inline"><a href="index.html">Back to the main</a></h1>
 	</header>
 	<section class="sub max-w-[1500px] m-auto mb-[0.4375rem]">
@@ -349,13 +350,14 @@
 
 		</ul>
 	</section>
-	<footer class="border-t border-[#ddd] py-8 text-center relative">
-		<p>Copyright 2024 By Ji Youngeun</p>
-		<button class="absolute bottom-[30px] right-[20px] flex items-center pl-[25px]">
-			<span class="w-5 h-5 inline-block mr-2"></span>
-			Back On
-			Top</button>
-	</footer>
+    <footer class="border-t border-[#ddd] py-8 text-center relative px-4 max-[640px]:p-[1rem]">
+        <p>Copyright 2024 By Ji Youngeun</p>
+        <a href="#main"
+            class="absolute bottom-[1.875rem] right-[1.25rem] flex items-center pl-[1.56rem] max-[640px]:bottom-[1rem] max-[640px]:indent-[-9999px]">
+            <span class="w-5 h-5 inline-block mr-2"></span>
+            Back On
+            Top</a>
+    </footer>
 	<script src="js/index.js"></script>
 </body>
 
